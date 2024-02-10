@@ -9,7 +9,7 @@
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
+  font-size: 24px; 
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -50,6 +50,7 @@
   color: #ffffffdd;
   font-family: monospace;
 }
+
 
 #spinner {
   position: absolute;
@@ -127,4 +128,62 @@
   text-align: center;
   font-family: monospace;
   color: #0000008d;
+}
+
+.Ask {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  color: #333; 
+  line-height: 1.5; 
+
+  /* Add calligraphy/brushstroke-like styling */
+  letter-spacing: 1px;
+  text-align: center; 
+  text-shadow: 1px 1px 1px #999; 
+}
+
+.Explanation {
+  font-family: 'Noto Sans SC', 'Noto Sans CJK SC', sans-serif; /* East Asian font */
+  font-size: 18px;
+  color: #555; /* Dark gray text color */
+  line-height: 1.5;
+  text-align: center;
+  margin-right: 465px;
+  margin-left: 465px;
+  margin-top:20; /* Adjust the top and bottom margins, and set auto for left and right to center the element */
+  border: 2px solid #c5a56e ; /* Add a border with a light gray color */
+  padding: 15px; /* Add padding to the content */
+  border-radius: 8px; /* Optional: Add rounded corners for a softer look */
+}
+
+#generate-button {
+  background-color: #a79b86 ; /* Yellow color */
+  color: #333; /* Dark text color */
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: 'Noto Sans SC', 'Noto Sans CJK SC', sans-serif; /* East Asian font */
+  border: none;
+  border-radius: 5px;
+  margin: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#generate-button:hover {
+  background-color: #c5a56e; /* Lighter yellow on hover */
+}
+
+#generate-button:active {
+  background-color: pink; /* Darker yellow on click */
+}
+
+.emerge {
+  position: relative;
+  -webkit-animation-name: emerge;
+  -webkit-animation-duration: 0.8s;
+  animation-name: emerge;
+  animation-duration: 0.8s;
+  transition: opacity 0.3s ease-in-out; /* Added transition property */
 }

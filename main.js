@@ -1,9 +1,6 @@
-// Nonflowers
-// Procedurally generated paintings of nonexistent flowers.
-// (c) Lingdong Huang 2018
 
 
-// index arrays with .x, .y, .z and negative indices
+// index arrays with .x, .y, .z and negative indice
 Object.defineProperty(Array.prototype, "x", {
     get: function () {return this[0]},
     set: function (n) {this[0] = n},
@@ -1324,21 +1321,35 @@ function reloadWSeed(s){
 }
 
 // initialize everything
-function load(){
-  makeBG()
-  setTimeout(_load,100)
-  function _load(){
-    generate()
-    document.getElementById("canvas-container").appendChild(CTX.canvas)
+function load() {
+  makeBG();
+  setTimeout(_load, 500);
+  
+  function _load() {
+    generate();
+    document.getElementById("canvas-container").appendChild(CTX.canvas);
     document.getElementById("loader").style.display = "none";
     document.getElementById("content").style.display = "block";
     document.getElementById("inp-seed").value = SEED;
-    document.getElementById("share-twitter").href=
-      "https://twitter.com/share?url="
-      +window.location.href
-      +"&amp;text="+window.location.href+";hashtags=nonflowers";
-  }  
+    document.getElementById("share-twitter").href =
+      "https://twitter.com/share?url=" +
+      window.location.href +
+      "&amp;text=" +
+      window.location.href +
+      ";hashtags=nonflowers";
+  }
 }
+
+function generateAndShow() {
+  makeBG();
+  generate();
+  document.getElementById("canvas-container").appendChild(CTX.canvas);
+  document.getElementById("summary").style.display = "none"; // Optional: Hide summary
+  document.getElementById("settings").style.display = "none"; // Optional: Hide settings
+  document.getElementById("share").style.display = "none"; // Optional: Hide share
+}
+
+
 
 
 

@@ -4,22 +4,34 @@
     <meta charset="utf-8">
     <script src="main.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Nonflowers</title>
-        
+    <title>WYBM Valentine
+    </title>
   </head>
   <body onload="load()">
-    
     <div id="loader">
       <div id="spinner">
 
       </div>
-      <div id="load-text">Generating...&nbsp;&nbsp;&nbsp;</div>
+      <div id="load-text">Crafting Valentine Magic...&nbsp;&nbsp;&nbsp;</div>
     </div>
 
     <div style="display:none;" id="content" class="emerge" >
       <div><br></div>
       <div id="canvas-container"></div>
       <div><br></div>
+      
+      <div class="Ask">
+        Will you be my Valentine?
+      </div>
+      
+      <div class="Explanation">
+        These photographs depict rare and non-existent flowers that are not found anywhere 
+        on Earth; they are the only ones of their kind in the entire planet. You can only see the flowers 
+        once, making it exclusive and special. Sorry wala ko ga butang yes or no.
+      </div>
+
+      <button id="generate-button" onclick="generateAndShow()">Generate</button>
+
       <table align="center" style="width:600px; ">
         <tr><td align="right">
           <div id="options" class="option-bar">
