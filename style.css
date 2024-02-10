@@ -145,17 +145,26 @@
 }
 
 .Explanation {
-  font-family: 'Noto Sans SC', 'Noto Sans CJK SC', sans-serif; /* East Asian font */
+  font-family: 'Noto Sans SC', 'Noto Sans CJK SC', sans-serif;
   font-size: 18px;
-  color: #555; /* Dark gray text color */
+  color: #555;
   line-height: 1.5;
   text-align: center;
-  margin-right: 465px;
-  margin-left: 465px;
-  margin-top:20; /* Adjust the top and bottom margins, and set auto for left and right to center the element */
-  border: 2px solid #c5a56e ; /* Add a border with a light gray color */
-  padding: 15px; /* Add padding to the content */
-  border-radius: 8px; /* Optional: Add rounded corners for a softer look */
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px; /* Add 'px' to the value for margin-top */
+  max-width: 600px; /* Set a maximum width for better readability on smaller screens */
+  border: 2px solid #c5a56e;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Add a media query for screens with a maximum width of 600px (typical for mobile devices) */
+@media (max-width: 600px) {
+  .Explanation {
+    margin-right: 10px; /* Adjust the right margin for smaller screens */
+    margin-left: 10px; /* Adjust the left margin for smaller screens */
+  }
 }
 
 #generate-button {
